@@ -1,0 +1,146 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  padding: none;
+}
+
+body {
+    background-color: black;
+}
+
+/* ROW 1 */
+
+.line1 .col {
+    height: 150px;
+}
+
+.first1, .first3 {
+    background-color: red;
+}
+
+.first2, .first4 {
+    background-color: green;
+} 
+
+
+/* ROW 2 */
+
+.line2 .col {
+    height: 30px;
+}
+
+.second1, .second3, .second5, .second7, .second9 {
+    background-color: red;
+} 
+
+.second2, .second4, .second6, .second8 {
+    background-color: green;
+}
+
+/* ROW 3 */
+
+.line3 .col {
+    height: 130px;
+}
+
+.third1, .third5, .third6 {
+    border: 3px solid blue;
+}
+
+.third2 {
+    border: 3px double yellow;
+}
+
+.third3 {
+    border: 3px dotted red;
+}
+
+.third4 {
+    border: 3px solid rgb(236, 168, 231);
+}
+
+/* ROW 4 */
+
+.line4 .col {
+    height: 130px;
+}
+
+.fourth1, .fourth5, .fourth9 {
+    background-color: green;
+}
+
+.fourth2, .fourth6, .fourth10 {
+    background-color: red;
+}
+
+.fourth3, .fourth7, .fourth11 {
+    background-color: blue;
+}
+
+.fourth4, .fourth8 {
+    background-color: rgb(218, 212, 189);
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.219);
+    border: none;
+    color: white;
+}
+
+/* ROW 5 */
+
+.line5 .col {
+    height: 130px;
+}
+
+.fifth1 {
+    background: linear-gradient(to bottom, rgb(209, 98, 132), green);
+} 
+
+.fifth2 {
+    background: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(25, 4, 219));
+}
+
+.fifth3 {
+    background: linear-gradient(180deg, rgb(208, 255, 0), rgb(7, 163, 15));
+}
+
+.line6 .col {
+    height: 130px;
+}
+
+.sixth1 {
+    background-color: blue;
+    border: 3px double rgb(205, 216, 157);
+}
+
+.sixth2 {
+    background-color: green;
+    border: 3px dotted red;
+}
+
+.line7 .col {
+    height: 130px;
+}
+
+.seventh1 {
+    background-color: maroon;
+}
+
+.seventh2 {
+    background-color: midnightblue;
+}
+
+.seventh3 {
+    background-color: green;
+}
+
+.seventh4 {
+    background-color: purple;
+}
+
