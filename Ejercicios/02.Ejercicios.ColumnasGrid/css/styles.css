@@ -8,6 +8,19 @@
   scroll-behavior: smooth;
 }
 
-.line {
+
+.bgBlack {
+   background-color: black;
+   height: 30px;
+   border: 1px solid black;
+}
+
+.bgGreen {
+    background-color: chartreuse;
     height: 30px;
+    border: 1px solid black;
+}
+
+.line6-1, .line6-2 {
+    height: 15px;
 }
