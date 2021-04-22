@@ -1,0 +1,114 @@
+.pTopButton {
+  padding: 40px 0;
+}
+
+nav {
+  background-color: #082b49;
+}
+nav .linksNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+nav .linksNav li {
+  list-style: none;
+  padding: 0 35px;
+}
+nav .linksNav li a {
+  color: #fff;
+}
+
+.bg-banner {
+  background-image: url(../img/banner_bg.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.bg-banner .textBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: unset;
+  padding-left: 10%;
+}
+.bg-banner .textBanner p {
+  color: coral;
+}
+.bg-banner .textBanner h1 {
+  color: #082b49;
+  font-weight: 300;
+  font-size: 60px;
+  word-spacing: 40px;
+}
+
+.imageDog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.imageDog img {
+  width: 50%;
+}
+
+.fCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fCenter .textCare {
+  width: 50%;
+}
+
+.bgServices {
+  background-image: url(../img/services_bg.png);
+}
+.bgServices .col-12 {
+  text-align: center;
+  padding: 110px 0;
+}
+.bgServices .card {
+  background-color: transparent;
+  border: none;
+  align-items: center;
+}
+.bgServices .card img {
+  width: 60%;
+}
+.bgServices .card h5 {
+  text-align: center;
+}
+.bgServices .card p {
+  font-size: 0.8rem;
+  color: #000000ad;
+}
+
+.colLeftAdopt {
+  padding-left: 25%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colLeftAdopt h2 {
+  font-weight: 400;
+  word-spacing: 15px;
+  margin-bottom: 4rem;
+}
+.colLeftAdopt p {
+  font-size: 18px;
+}
+.colLeftAdopt .containerAdopt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.colLeftAdopt button {
+  border-radius: 20px;
+  background-color: #53c9bb;
+  border-color: #53c9bb;
+}

@@ -1,0 +1,116 @@
+// VARIABLES
+@import './variables';
+// MIXINS
+@import './mixins';
+
+.pTopButton {
+    padding: 40px 0;
+}
+
+
+nav {
+   background-color: $blue01;
+
+  .linksNav{
+    @include flexCenter;
+    padding: 15px 0;
+
+    li{
+        list-style: none;
+        padding: 0 35px;
+        a{
+            color: #fff;
+        }
+    }
+
+  }
+}
+
+.bg-banner {
+    background-image: url(../img/banner_bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    .textBanner{
+       @include flexCenter;
+       flex-direction: column;
+       align-items: unset;
+       padding-left: 10%;
+
+       p {
+           color: $coral02;
+       }
+       h1 {
+           color: $blue01;
+           font-weight: 300;
+           font-size: 60px;
+           word-spacing: 40px;
+       }
+    }
+}
+
+.imageDog {
+    @include flexCenter;
+    height: 80vh;
+       img {
+           width: 50%;
+       }   
+}
+
+
+.fCenter {
+    @include flexCenter;
+    .textCare {
+        width: 50%;
+    }
+}
+
+.bgServices {
+    background-image: url(../img/services_bg.png);
+    .col-12 {
+        text-align: center;
+        padding: 110px 0;
+    }
+    .card {
+        background-color: transparent;
+        border: none;
+        align-items: center;
+        img{
+            width:60%;
+        }
+        h5 {
+            text-align: center;
+        }
+        p{
+            font-size: 0.8rem;
+            color: #000000ad;
+        }
+    }
+}
+
+.colLeftAdopt {
+    padding-left: 25%;
+    flex-direction: column;
+    @include flexCenter;
+    h2 {
+        font-weight: 400;
+        word-spacing: 15px;
+        margin-bottom: 4rem;
+    }
+    p {
+        font-size: 18px;
+    }
+    .containerAdopt {
+         @include flexCenter;
+    }
+    // CLASE A REPERTIR
+    button {
+        border-radius: 20px;
+        background-color: #53c9bb;
+        border-color: #53c9bb;;
+    }
+}
+
