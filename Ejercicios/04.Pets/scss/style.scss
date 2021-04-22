@@ -26,6 +26,8 @@ nav {
   }
 }
 
+// <!-- BANNER -->
+
 .bg-banner {
     background-image: url(../img/banner_bg.png);
     height: 100vh;
@@ -68,6 +70,8 @@ nav {
     }
 }
 
+// <!-- BEST Services -->
+
 .bgServices {
     background-image: url(../img/services_bg.png);
     .col-12 {
@@ -91,6 +95,12 @@ nav {
     }
 }
 
+.paddSide {
+    padding: 2% 12%;
+}
+
+// <!-- ADOPT US -->
+
 .colLeftAdopt {
     padding-left: 25%;
     flex-direction: column;
@@ -106,11 +116,79 @@ nav {
     .containerAdopt {
          @include flexCenter;
     }
-    // CLASE A REPERTIR
-    button {
-        border-radius: 20px;
-        background-color: #53c9bb;
-        border-color: #53c9bb;;
+
+}
+
+.allBtns {
+    border-radius: 20px;
+    background-color: #53c9bb;
+    border-color: #53c9bb;;
+}
+// VINCULADO TAMBIEN A SECCION VOLUNTER
+
+
+
+// <!-- WINDOW HAPPYDOG -->
+
+.happyDog {
+    background-image: url(../img/review_bg.png);
+    height: 47vh;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+// <!-- VOLUNTEER -->
+
+.adoptEm {
+    @include flexCenter;
+    .textCare {
+        width: 50%;
     }
 }
 
+// <!-- BLUE FOOTER -->
+
+.bgBlue{
+    background-image: url(../img/footer_bg.png);
+    height: 100vh;
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 110px 0;
+        color: $footerFont;
+    }
+    P{
+        margin-bottom: 3%;
+    }
+    .inputForm {
+        width: 37%;
+    }
+
+
+    .boxLi {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // justify-content: center;
+        text-align:center;
+        color: $footerFont;
+    }
+    h3 {
+        font-weight: 400;
+    }
+    .home {
+        list-style: none;
+        margin-right: 17%;
+    }
+    .homeLi {
+        padding: 5%;
+    }
+    .homeLi a {
+        color: $footerFont;
+    }
+    
+}
