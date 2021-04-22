@@ -119,6 +119,16 @@ body {
     border: 3px double rgb(205, 216, 157);
 }
 
+.card {
+    width: 45%;
+    height: 90%;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
 .sixth2 {
     background-color: green;
     border: 3px dotted red;
@@ -142,5 +152,41 @@ body {
 
 .seventh4 {
     background-color: purple;
+}
+
+.line8 .col {
+    height: 130px;
+}
+
+.eigth1, .eigth5, .eigth7 {
+    background-color: red;
+}
+
+.eigth2, .eigth6 {
+    background-color: blue;
+}
+
+.eigth3, .eigth8 {
+    background-color: green;
+}
+
+.eigth4 {
+    background-color: honeydew;
+}
+
+.line9 col {
+    height: 130px;
+}
+
+.nineth1, .nineth4 {
+    background: linear-gradient(to bottom, rgb(209, 98, 132), green);
+}
+
+.nineth2 {
+    background: linear-gradient(to bottom right, rgb(255, 0, 0), rgb(25, 4, 219));
+}
+
+.nineth3 {
+    background: linear-gradient(180deg, rgb(208, 255, 0), rgb(7, 163, 15));
 }
 
