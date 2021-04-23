@@ -124,7 +124,7 @@ nav {
     background-color: #53c9bb;
     border-color: #53c9bb;;
 }
-// VINCULADO TAMBIEN A SECCION VOLUNTER
+// VINCULADO TAMBIÉN A SECCION VOLUNTEER
 
 
 
@@ -172,14 +172,19 @@ nav {
     .boxLi {
         display: flex;
         flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
+        align-items: center;
+        justify-content: center;
         text-align:center;
         color: $footerFont;
     }
     h3 {
         font-weight: 400;
     }
+    .orderList {
+      width: 154px;  
+      text-align: left;  
+    }
+
     .home {
         list-style: none;
         margin-right: 17%;
