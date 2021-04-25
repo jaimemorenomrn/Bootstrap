@@ -9,27 +9,23 @@
 }
 
 /* VARIABLES */
-:root{
-   --secondaryBlack: #222222;
-   --thirdBlack: #333333;
-   --mainFont: 'Antonio', sans-serif;
-   --secondaryFont: #ff8b00;
-   --thirdFont: #939688;
+:root {
+  --secondaryBlack: #222222;
+  --thirdBlack: #333333;
+  --mainFont: "Antonio", sans-serif;
+  --secondaryFont: #ff8b00;
+  --thirdFont: #939688;
 
-
-
-/* HEADER */
-
-
+  /* HEADER */
 }
 nav {
-    height: 7rem;
-    width: 100%;
-    background-color: #222222;
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    box-shadow: 1px 1px 5px 5px #000;
+  height: 7rem;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 1px 1px 5px 5px #000;
 }
 
 .logo {
@@ -40,9 +36,13 @@ nav {
   align-items: center;
 }
 
-.logo h3 a strong{
+.logo h3 a strong {
   font-size: 20px;
   color: var(--secondaryFont);
+}
+
+.logo h3 a strong:hover {
+  text-decoration: underline;
 }
 
 .navBar {
@@ -72,6 +72,10 @@ nav {
   color: var(--secondaryFont);
 }
 
+.aboutArrow {
+  display: flex;
+}
+
 /* SECTION 1 */
 
 .bgSkate {
@@ -85,7 +89,6 @@ nav {
 }
 
 .newGen {
-  /* height: 100%; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -101,7 +104,7 @@ nav {
 }
 
 .newText {
-  margin-bottom: 9rem; 
+  margin-bottom: 9rem;
 }
 
 .newGen button {
@@ -120,21 +123,21 @@ nav {
 
 .sect2 {
   background-color: var(--secondaryBlack);
-  height: 100%;
-  width: 100%;
+  height: 146vh;
   color: var(--thirdFont);
 }
 
-.sect2 div {
-  width: 100%;
-  height: 56%;
+.servContainer {
+  height: 110vh;
 }
 
 .serv {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 7%;
+  width: 100%;
+  height: 50vh;
 }
 
 .serv h2 {
@@ -160,13 +163,43 @@ nav {
   margin-bottom: 2rem;
 }
 
-
 .icon {
-  width: 64px;
-  height: 64px;
+  width: 70px;
+  height: 70px;
   border-radius: 50px;
   margin-bottom: 2.3rem;
   background-color: var(--thirdBlack);
+  padding-top: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+.icon-b {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 64px;
+  height: 64px;
+}
+
+.i1 {
+  background-image: url(../img/i1.png);
+}
+
+.i2 {
+  background-image: url(../img/i2.png);
+}
+
+.i3 {
+  background-image: url(../img/i3.png);
+}
+.i4 {
+  background-image: url(../img/i4.png);
+}
+.i5 {
+  background-image: url(../img/i5.png);
+}
+.i6 {
+  background-image: url(../img/i6.png);
 }
 
 .serCard h3 {
@@ -176,16 +209,11 @@ nav {
   color: #fff;
 }
 
-
 /* SECTION 3 */
 
 .sect3 {
-   background-color: #222222;
+  background-color: #222222;
 }
-
-
-
-
 
 .square1 {
   width: 50rem;
@@ -197,9 +225,8 @@ nav {
   overflow: hidden;
 }
 
-
-.square2, .square3 {
-
+.square2,
+.square3 {
   color: var(--thirdFont);
   padding: 5% 7%;
 }
@@ -208,9 +235,10 @@ nav {
   font-family: var(--mainFont);
   color: #ff8b00;
 }
-                                      /* FALTAN STICK EN LI */
+
 .bestList {
   margin: 56px 19px;
+  list-style-image: url(../img/check-mark.png);
 }
 
 .square4 {
@@ -223,5 +251,162 @@ nav {
   overflow: hidden;
 }
 
-
 /* SECTION 4 */
+
+.sect4 {
+  background-color: var(--secondaryBlack);
+}
+
+.colTeam1 {
+  width: 100%;
+  height: 36vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5rem;
+  color: white;
+}
+
+.colTeam1 h2 {
+  text-align: center;
+  font-size: 43px;
+  font-family: var(--mainFont);
+  color: var(--secondaryFont);
+}
+.colTeam1 p {
+  text-align: center;
+  color: var(--thirdFont);
+  line-height: 2;
+}
+
+.lineTeam2 {
+  height: 50%;
+  padding: 3rem 1rem;
+}
+
+.colTeam2 {
+  width: 100%;
+  height: 50vh;
+}
+
+.cardTeam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--thirdBlack);
+  border-radius: 2%;
+}
+
+.teamPic {
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.3rem;
+}
+
+.cardTeam h4 {
+  font-family: var(--mainFont);
+  color: var(--secondaryFont);
+}
+
+.cardTeam p {
+  font-size: 15px;
+  color: var(--thirdFont);
+}
+
+.cardTeam ul {
+  display: flex;
+  list-style: none;
+}
+
+.cardTeam ul a {
+  margin: 0 3px;
+}
+
+footer {
+  background-color: var(--thirdBlack);
+  padding-top: 8%;
+}
+
+footer .colHeight {
+  height: 58vh;
+  border-bottom: 1px solid var(--thirdFont);
+}
+
+.footOrder h4 {
+  font-size: 19px;
+  font-family: var(--mainFont);
+  color: #fff;
+  margin-bottom: 5%;
+}
+
+.textAbout {
+  color: #fff;
+}
+
+.featureList {
+  list-style: none;
+  color: var(--thirdFont);
+}
+
+.featureList li {
+  padding: 7px 0;
+}
+
+.enterMail {
+  display: flex;
+}
+
+.enterMail input {
+  height: 3rem;
+  width: 70%;
+  background-color: transparent;
+  border: 1px solid var(--thirdFont);
+  border-radius: 2px;
+  margin-bottom: 15%;
+}
+
+.enterMail input::placeholder {
+  padding-left: 7px;
+}
+
+.enterMail button {
+  width: 6rem;
+  height: 3rem;
+  font-size: 0.9rem;
+  background-color: var(--secondaryFont);
+  color: #fff;
+  border: 1px solid var(--secondaryFont);
+}
+
+.subsList {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+  margin-left: -5px;
+}
+
+.imgFb {
+  margin-right: 20px;
+}
+
+.copyText {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.copyText p {
+  font-size: 12px;
+  color: #fff;
+}
+
+.heart {
+  font-size: 10px;
+  color: red;
+}
+
+.easterEgg {
+  color: var(--thirdFont);
+}

@@ -11,11 +11,11 @@
      <link rel="stylesheet" href="./css/styles.css">
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;500;700&display=swap" rel="stylesheet">
-
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
 
 </head>
 <body>
-
 
 
   <!-- HEADER -->
@@ -29,7 +29,7 @@
                  <ul>
                      <li><a href="#" class="home">Home</a></li>
                      <li><a href="#">Services</a></li>
-                     <li><a href="#">About</a></li> <!-- ARROW -->
+                     <li><a href="#" class="aboutArrow">About<span class="material-icons"> keyboard_arrow_down</span></a></li>
                      <li><a href="#">Testimonials</a></li>
                      <li><a href="#">Blog</a></li>
                      <li><a href="#">Contact</a></li>
@@ -44,9 +44,7 @@
 
     <section class="sect1">
         <div class="container-fluid bgSkate">
-            <!-- <div class="row line0">
-                <div class="col-12"></div>
-            </div> -->
+           
             <div class="row line1">
                 <div class="col-3"></div>
                 <div class="col-6 newGen">
@@ -65,32 +63,38 @@
 
 
     <section class="sect2">
-
-        <div class="container-fluid">
-            <div class="row serv">
+      <div class="container servContainer">
+        
+            <div class="row  serv">
                 <div class="col-12">
                     <h2>SERVICES</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, reprehenderit ipsam. <br> Ducimus eaque hic incidunt, fugiat quos repellat? Ipsam tenetur vitae asperiores.</p>
                 </div>
             </div>
-        </div>
+        
 
 
-        <div class="container">
+        
             <div class="row servDet">
                 <div class="col-4 serCard">
                  
-                  <img src="./img/i1.png" alt="" class="icon i1"> 
+                    <div class="icon">
+                        <div class="icon-b i1"></div>  
+                    </div> 
                   <h3>SKATE FOR BEGINNER</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, modi iusto libero itaque dolorum est perferendis!</p>
                 </div>
                 <div class="col-4 serCard">
-                  <img src="./img/i2.png" alt="" class="icon i2">
+                    <div class="icon">
+                        <div class="icon-b i2"></div>  
+                    </div>
                   <h3>PERSONAL TRAINING</h3>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ex unde, veniam ipsam fuga eius at eius?</p>
                 </div>
                 <div class="col-4 serCard">
-                    <img src="./img/i3.png" alt="" class="icon i3">
+                    <div class="icon">
+                        <div class="icon-b i3"></div>  
+                    </div>
                     <h3>BEST SKATER</h3>
                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minima quos sapiente! Delectus iusto mollitia obcaecati.</P>
                 </div>
@@ -99,24 +103,31 @@
 
             <div class="row servDet">
                 <div class="col-4 serCard">
-                 
-                  <img src="./img/i4.png" alt="" class="icon i4"> 
+                  <div class="icon"> 
+                      <div class="icon-b i4"></div>  
+                  </div>
+
                   <h3>ADVANCE SKATER</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, modi iusto libero itaque dolorum est perferendis!</p>
                 </div>
                 <div class="col-4 serCard">
-                  <img src="./img/i5.png" alt="" class="icon i5">
+                    <div class="icon">
+                        <div class="icon-b i5"></div>  
+                    </div>
                   <h3>NOVICE TO PRO SKATER</h3>
                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita ex unde, veniam ipsam fuga eius at eius?</p>
                 </div>
                 <div class="col-4 serCard">
-                    <img src="./img/i6.png" alt="" class="icon i6">
+                    <div class="icon">
+                        <div class="icon-b i6"></div>  
+                    </div>
                     <h3>SKATE BOARDING</h3>
                     <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minima quos sapiente! Delectus iusto mollitia obcaecati.</P>
                 </div>
             </div>
+        
         </div>
-        </div>
+    </div>
     </section>
 
     <!-- SECTION 3 -->
@@ -125,7 +136,7 @@
         <div class="container">
             <div class="row lineSkater1">
                 <div class="col-6 square1 img1"></div>
-                    <!-- <img src="./img/images/img_1.jpg" alt="chaval" class="img1"> -->
+                   
                 
                 <div class="col-6 square2">
                     <h3 class="bestGuys">MY BEST PERFORMANCE</h3>
@@ -166,16 +177,125 @@
                     </ul>
                 </div>
                 <div class="col-6 square4 img2"></div>
-                    <!-- <img src="./img/images/img_2.jpg" alt="tipo"  class="img2"> -->
+                   
                
             </div>
         </div>
-
 
     </section>
 
 
 
+    <!-- SECTION 4 -->
+
+
+    <section class="sect4">
+       <div class="container">
+           <div class="row lineTeam1">
+               <div class="col-12 colTeam1">
+                <h2>OUR TEAM</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, reprehenderit ipsam. <br> Ducimus eaque hic incidunt, fugiat quos repellat? Ipsam tenetur vitae asperiores.</p>
+               </div>
+           </div>
+           <div class="row lineTeam2">
+               <div class="col-4">
+                   <div class="cardTeam">
+                       <img src="./img/images/person_1.jpg" alt="proSkater person" class="teamPic person-01">
+                       <h4>JEAN SMITH</h4>
+                       <p>SKATEBOARD TRAINER</p>
+                       <ul>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="col-4">
+                   <div class="cardTeam">
+                       <img src="./img/images/person_2.jpg" alt="proSkater person" class="teamPic person-02">
+                       <h4>BOB CARRY</h4>
+                       <p>SKATEBOARD TRAINER</p>
+                       <ul>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="col-4">
+                   <div class="cardTeam">
+                       <img src="./img/images/person_3.jpg" alt="proSkater person" class="teamPic person-03">
+                       <h4>RICKY FISHER</h4>
+                       <p>SKATEBOARD TRAINER</p>
+                       <ul>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                           <li><a href="#"><img src="./img/images/iconface.png" width="32" height="32" id="rs1"/></a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+
+
+       </div>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 colHeight">
+                    <div class="footOrder">
+                        <h4>ABOUT US</h4>
+                        <p class="textAbout">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum sunt pariatur esse necessitatibus alias, odio inventore. Quae fugit minus nulla totam quisquam pariatur delectus adipisci.</p>
+                    </div>
+                </div>
+                <div class="col-4 colHeight">
+                    <div class="footOrder">
+                        <h4>FEATURES</h4>
+                        <ul class="featureList">
+                            <li><a>About Us</a></li>
+                            <li><a>Pres Releases</a></li>
+                            <li><a>Testimonials</a></li>
+                            <li><a>Terms of Service</a></li>
+                            <li><a>Privacy</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4 colHeight">
+                    <div class="footOrder">
+                        <h4>SUSCRIBE TO NEWSLETTER</h4>
+                        <div class="enterMail">
+                            <input type="email" name="email" class="mailBox" placeholder="Enter Email">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                        <h4>FOLLOW US</h4>
+                        
+                        <ul class="subsList">
+                            <li><a href="#" class="subsLi"><img src="./img/images/facebook.png" alt="Facebook" class="imgFb"></a></li>
+                            <li><a href="#" class="subsLi"><img src="./img/images/facebook.png" alt="Facebook" class="imgFb"></a></li>
+                            <li><a href="#" class="subsLi"><img src="./img/images/facebook.png" alt="Facebook" class="imgFb"></a></li>
+                            <li><a href="#" class="subsLi"><img src="./img/images/facebook.png" alt="Facebook" class="imgFb"></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 copyText">
+                    <p>&copy;2020 All right reserved|This template is made with<span class="material-icons heart">
+                        favorite
+                        </span>by<span class="easterEgg"> Codehouse</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -186,14 +306,7 @@
 
 
 
-
-
-
-
-
-
-
-
+<!-- LINK TO SCRIPT -->
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
