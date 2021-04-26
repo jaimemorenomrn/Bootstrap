@@ -1,0 +1,20 @@
+@mixin contentFlexLine {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10% 5%;
+    color: #fff;
+}
+
+@mixin maxButton {
+    width: 11%;
+    height: 10%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 6px;
+}
+
+@mixin hrShape {
+    width: 75%;
+    border: 1px solid #fff;
+}
