@@ -17,7 +17,7 @@ header .navAreaSpace .titleTrope {
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  padding-top: 20%;
+  padding-top: 12%;
 }
 header .navAreaSpace .titleTrope h2 {
   font-weight: 800;
