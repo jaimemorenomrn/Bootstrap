@@ -1,0 +1,238 @@
+@import "./mixins";
+@import "./variables";
+
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+// NAVBAR AREA
+
+header {
+    height: 100vh;
+    .navAreaSpace {
+        .titleTrope {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: center;
+            padding-top: 20%;
+            h2 {
+                font-weight: 800;
+            }
+        }
+        .navBarContext {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 1%;
+            .redHover:hover {
+                color: #fff;
+                background-color: #dc3545;
+                border: 1px solid #dc3545;
+                border-radius: 4px;
+                width: 100%;
+            }
+        }
+    }
+    .bgPaintFace {
+        height: 50vh;
+        background-image: url(../imagesPaint/pic01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .colForFlex{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;margin-top: 4%;
+    }
+    
+    .cardHeader {
+        width: 33%;
+        height: 43%;
+        display: flex;
+        flex-direction: column;
+        background-color: #343a40;
+        text-align: center;
+        justify-content: center;
+        margin-top: 1%;
+        h1 {
+            font-size: 22px;
+            font-weight: 400;
+            color: #fff;
+        }
+        p {
+            color: #ae2a48;
+        }
+    }
+    
+   
+
+}
+
+// SECTION STAR
+
+.littleStar {
+    border-bottom: 2px solid #c1bfbf;
+    .starFrame{
+        padding-bottom: 4%;
+        .linkShadow {
+            text-decoration: none;
+        }
+        .linkShadow:hover {
+            box-shadow: 1px 1px 5px 5px black;
+        }
+        .cardStars {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;   
+            .weather {
+                height: 100px;
+                width: 100%;
+                @include imgPosition;
+                background-size: contain;
+                padding-bottom: 28%;
+                margin-top: 2%;
+                margin-bottom: 6%;
+            }
+            .weat1 {
+                background-image: url(../imagesPaint/config.png);
+            }
+            .weat2 {
+                background-image: url(../imagesPaint/favorito.png);
+            }
+            .weat3 {
+                background-image: url(../imagesPaint/trueno.png);
+            }
+            h3 {
+                font-weight: 700;
+                color: #000;
+            }
+            .textStar {
+              color: #d3deef;
+            }
+        }
+    }
+
+}
+
+// PORTFOLIO
+.portfolio{
+    background-color: $softGray;
+    .portTitle {
+        display: flex;
+        justify-content: center;
+        padding: 4% 0;
+        h3 {
+            font-weight: 700;
+        }
+    }
+    .forCards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10%;
+        .cardPort{
+            width: 27%;
+            margin: 2% 0;
+        } 
+        .card-body {
+            height: 20rem;
+            p{
+             color: $buttonGray;
+             margin-bottom: 47%;
+            }
+        }
+        
+    }
+    
+}
+
+// BLOG
+
+ .blog {
+    background-color: $softGray;
+    .blogTitle {
+        display: flex;
+        justify-content: center;
+        padding: 4% 0;
+        h3{
+            font-weight: 700;
+        }
+    }
+    .bogLine {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3% 4%;
+        h4 {
+            margin: 10% 0;
+        }
+        p {
+            color: $buttonGray;
+            margin: 12% 0;;
+        }
+        .forButtons {
+            margin: 13% 0;;
+        }
+    }
+ }
+
+// FOOTER
+
+.footer {
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding: 4%;
+    .ftrSiders{
+        height: 100%;
+        width: 50%;
+    }
+    .ft1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h4 {
+            color: #fff;
+        }
+        img {
+            margin: 23% 0;
+        }
+    }
+    .ft2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        h4 {
+            color: #fff;
+        }
+        .forRRSS ul {
+                display: flex;
+                li {
+                    list-style: none;
+                    margin: 0 1%;
+                }
+        }
+    } 
+}
+
+
+
+
+
+

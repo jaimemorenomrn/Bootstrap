@@ -1,0 +1,215 @@
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+header {
+  height: 100vh;
+}
+header .navAreaSpace .titleTrope {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  padding-top: 20%;
+}
+header .navAreaSpace .titleTrope h2 {
+  font-weight: 800;
+}
+header .navAreaSpace .navBarContext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+header .navAreaSpace .navBarContext .redHover:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border: 1px solid #dc3545;
+  border-radius: 4px;
+  width: 100%;
+}
+header .bgPaintFace {
+  height: 50vh;
+  background-image: url(../imagesPaint/pic01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .colForFlex {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4%;
+}
+header .cardHeader {
+  width: 33%;
+  height: 43%;
+  display: flex;
+  flex-direction: column;
+  background-color: #343a40;
+  text-align: center;
+  justify-content: center;
+  margin-top: 1%;
+}
+header .cardHeader h1 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #fff;
+}
+header .cardHeader p {
+  color: #ae2a48;
+}
+
+.littleStar {
+  border-bottom: 2px solid #c1bfbf;
+}
+.littleStar .starFrame {
+  padding-bottom: 4%;
+}
+.littleStar .starFrame .linkShadow {
+  text-decoration: none;
+}
+.littleStar .starFrame .linkShadow:hover {
+  box-shadow: 1px 1px 5px 5px black;
+}
+.littleStar .starFrame .cardStars {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.littleStar .starFrame .cardStars .weather {
+  height: 100px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: contain;
+  padding-bottom: 28%;
+  margin-top: 2%;
+  margin-bottom: 6%;
+}
+.littleStar .starFrame .cardStars .weat1 {
+  background-image: url(../imagesPaint/config.png);
+}
+.littleStar .starFrame .cardStars .weat2 {
+  background-image: url(../imagesPaint/favorito.png);
+}
+.littleStar .starFrame .cardStars .weat3 {
+  background-image: url(../imagesPaint/trueno.png);
+}
+.littleStar .starFrame .cardStars h3 {
+  font-weight: 700;
+  color: #000;
+}
+.littleStar .starFrame .cardStars .textStar {
+  color: #d3deef;
+}
+
+.portfolio {
+  background-color: #f7f7f7;
+}
+.portfolio .portTitle {
+  display: flex;
+  justify-content: center;
+  padding: 4% 0;
+}
+.portfolio .portTitle h3 {
+  font-weight: 700;
+}
+.portfolio .forCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+.portfolio .forCards .cardPort {
+  width: 27%;
+  margin: 2% 0;
+}
+.portfolio .forCards .card-body {
+  height: 20rem;
+}
+.portfolio .forCards .card-body p {
+  color: #343A40;
+  margin-bottom: 47%;
+}
+
+.blog {
+  background-color: #f7f7f7;
+}
+.blog .blogTitle {
+  display: flex;
+  justify-content: center;
+  padding: 4% 0;
+}
+.blog .blogTitle h3 {
+  font-weight: 700;
+}
+.blog .bogLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 4%;
+}
+.blog .bogLine h4 {
+  margin: 10% 0;
+}
+.blog .bogLine p {
+  color: #343A40;
+  margin: 12% 0;
+}
+.blog .bogLine .forButtons {
+  margin: 13% 0;
+}
+
+.footer {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  padding: 4%;
+}
+.footer .ftrSiders {
+  height: 100%;
+  width: 50%;
+}
+.footer .ft1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .ft1 h4 {
+  color: #fff;
+}
+.footer .ft1 img {
+  margin: 23% 0;
+}
+.footer .ft2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer .ft2 h4 {
+  color: #fff;
+}
+.footer .ft2 .forRRSS ul {
+  display: flex;
+}
+.footer .ft2 .forRRSS ul li {
+  list-style: none;
+  margin: 0 1%;
+}
