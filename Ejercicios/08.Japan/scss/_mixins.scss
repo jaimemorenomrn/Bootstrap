@@ -1,0 +1,44 @@
+@mixin bgPosition {
+            background-size: cover;
+            background-position: top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            }
+
+@mixin flexColumn {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                }
+
+@mixin buttons {
+            background: transparent;
+            border: 2px solid #000;
+}
+
+@mixin textButtons {
+            font-size: 13px;
+            font-weight: 700;
+            font-family: $mainFont;
+            color: #000;
+            text-decoration: none;
+}
+
+@mixin  formFont {
+        font-size: 12px;
+        font-weight: 700;
+        font-family: $mainFont;
+        color: $footerGrayFont;  
+}
+
+@mixin placeholderText {
+        font-size: 12px;
+        font-family: $secondaryFont;
+        text-decoration:underline; 
+        color: $footerSeconaryGrayF;
+}
+
+@mixin shinyButtons {
+        box-shadow: -3px 0px 10px 6px lightblue;
+}

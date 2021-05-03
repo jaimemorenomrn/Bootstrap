@@ -1,0 +1,356 @@
+@import "./variables";
+@import "./mixins";
+
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/b8/4b/40/b84b4078dfce0bfba65fc10615c3131d.jpg);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  @include bgPosition;
+  @include flexColumn;
+  text-align: center;
+
+  //    SCROLLING START
+  
+  .firstAir { 
+    margin-top: 20vh;
+    .textBanner {
+      margin-bottom: 10%;
+      h1 {
+        font-weight: 700;
+        color: #fff;
+        font-size: 4rem;
+      }
+      .bg-Text {
+        font-size: 20px;
+        font-family: $secondaryFont;
+        font-style: italic;
+        color: #fff;
+      }
+    }
+  
+  }
+
+  // HEADER
+
+  //    NAVBAR
+
+  .floatJapan {
+    background-color: #fff;
+    width: 80vw;
+    padding: 0;
+  
+  
+    .bg-nav {
+      
+      .whiteLet {
+        font-size: 13px;
+        font-weight: 700;
+        font-family: $mainFont;
+        color: #fff;
+        margin-right: 2rem;
+        
+      }
+      .whiteLet:hover{
+        color: $pinkTouche;
+      }
+    
+      margin-top: 2px;
+      background-color: $mainEmerald;
+      padding: 5px 1%;
+      .forRRSS {
+        width: 50%;
+        display: flex !important;
+        justify-content: flex-end;
+        ul {
+          display: flex;
+          li {
+            list-style: none;
+            margin: 6px 7px 0;
+            a:hover {
+              background-color: $pinkTouche;
+              box-shadow: -1px -1px 6px 4px $pinkTouche;
+            }
+          }
+        }
+      }
+      
+    }
+    
+    // HEADLINE
+
+
+    .headline {
+      .col-10 {
+        @include flexColumn;
+      }
+      padding-top: 9%;
+      h2 {
+        font-size: 40px;
+        font-weight: 800;
+      }
+      p {
+        font-family: $secondaryFont;
+        color: $secondaryFontGray;
+        margin: 5% 0 8%;
+      }
+      img {
+        width: 90%;
+      }
+    }
+    .btn1 {
+      width: 11rem;
+      height: 3.5rem;
+      margin-top: 4rem;
+      margin-bottom: 5.4rem;
+      a {
+        @include textButtons;
+      }
+    }
+
+    // BUTTON MULTI-PASS
+    .forBtns {
+      @include buttons;
+    }
+    .forBtns:hover {
+      @include shinyButtons;
+    }
+  }
+
+  // SECTION-TWINVIEWS
+
+  .twinViews {
+    .bigCard {
+      padding: 0 5%;
+      border: 2px solid $softBorderGray;
+      width: 50%;
+      @include flexColumn;
+
+      h2 {
+        margin-top: 15%;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      img {
+        width: 90%;
+        margin: 6% 0;
+      }
+      p {
+        font-family: $secondaryFont;
+        color: $secondaryFontGray;
+        margin: 5% 0 4%;
+      }
+      .btn2,
+      .btn3,
+      .btn3,
+      .btn4 {
+        width: 9rem;
+        height: 2.9rem;
+        margin-top: 1rem;
+        margin-bottom: 2.8rem;
+        a {
+          @include textButtons;
+        }
+      }
+    }
+    .bC3,
+    .bC4 {
+      border-bottom: none;
+    }
+  }
+
+  footer {
+    background-color: $footerBG-Gray;
+    label {
+      @include formFont;
+      display: flex;
+    }
+
+    .commBox {
+      padding: 6% 4% 0 4%;
+    }
+    .bx1 {
+      border-right: 2px solid $softBorderGray;
+      input,
+      textarea {
+        background-color: transparent;
+        border-radius: 0;
+      }
+      .biggerArea {
+        height: 130px;
+      }
+
+      .btn5 {
+        width: 11rem;
+        height: 2.9rem;
+        display: inline-block;
+        margin-right: 63%;
+        margin-top: 1rem;
+        margin-bottom: 2.8rem;
+        border: 2px solid $footerGrayFont;
+        a {
+          @include textButtons;
+          color: $footerGrayFont;
+        }
+      }
+    }
+    .bx2 {
+      border-left: 2px solid $softBorderGray;
+      padding: 1% 0;
+      .formBased {
+        .form-group {
+          display: flex;
+          align-items: center;
+          margin: 6% 0 8% 0;
+
+          padding-bottom: 5%;
+          border-bottom: 2px solid $softBorderGray;
+          #inputAddress::placeholder {
+            @include placeholderText;
+          }
+          #inputPhone::placeholder {
+            @include placeholderText;
+          }
+          #FormControlInput1::placeholder {
+            @include placeholderText;
+          }
+          input {
+            padding-top: 0;
+            background-color: transparent;
+            border: none;
+          }
+          .el-b1 {
+            margin: 0% 8% 0 8%;
+          }
+          .el-b2 {
+            margin: 0 7% 0 8%;
+          }
+          .el-b3 {
+            margin: 0 7% 0 8%;
+          }
+        }
+      }
+      .el4 {
+        display: flex;
+        justify-content: space-between;
+        margin: 4rem 4rem 0 1rem;
+        .socialText {
+          font-family: $mainFont;
+          font-size: 11px;
+          font-weight: 700;
+          color: $secondaryFontGray;
+          margin: 0 1.2rem;
+        }
+        .socialLi {
+          .socialUl {
+            width: 20%;
+            display: flex;
+            list-style: none;
+            li {
+              margin: 0 1rem;
+              a:hover {
+                background-color: $softPinkTouche;
+                box-shadow: -1px -1px 6px 4px $softPinkTouche;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // CREDITS
+
+  .window {
+    height: 8rem;
+    width: 100vw;
+    background-color: transparent;
+  }
+
+  .easterEgg {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    p {
+      @include textButtons;
+      color: #000;
+    }
+  }
+}
+
+
+
+
+// FOR ALL BUTTONS
+
+
+
+// MEDIA QUERIES
+
+
+@media (max-width: 960px){
+  .bx2 {
+    border-top: 2px solid $softBorderGray;
+  }
+}
+
+@media (max-width: 760px){
+  .textBanner strong {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 535px){
+      
+  .lgNav {
+    display: none !important;
+  }
+ 
+}
+
+
+// NAV-AUX
+
+@media (min-width: 535px){
+      
+  .smNav {
+    display: none !important;
+  }
+ 
+}
+
+@media (max-width: 534px){
+    
+  .forShortActive {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 80%;
+  }
+
+  .smNav {
+    display: revert !important;
+    margin-top: 0 !important;
+  }
+
+  .socialText {
+    display: none;
+  }
+
+  .el4 {
+    justify-content: center;
+  }
+ 
+}
+
